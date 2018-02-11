@@ -12,8 +12,7 @@
     <ImageButton
         android:id="@+id/imb_delete"
         android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:scc=""/>
+        android:layout_height="72dp"/>
 
     <!--multiple sources that said text views are scrollable at a certent size but that dont work for me, there will be a certain point where there are to many charachters on screen to see the entire result of the equation-->
     <!--pro tip, you want to include right of and end of -->

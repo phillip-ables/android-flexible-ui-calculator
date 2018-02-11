@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--regular styles dot xml for theming-->
+<resources>
+    <style name="ButtonNumberPad" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="ButtonOperation" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+
+</resources>
