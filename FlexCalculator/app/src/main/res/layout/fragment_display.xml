@@ -1,13 +1,34 @@
+<!--in a scenario where you have multiple activities and muyltiple fragments, you hsould absolutly include things in a styles fyle, but this okay where we are in a single page application where we dont have another activity-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:elevation="4dp"
+    android:paddingBottom="24dp"
+    android:paddingTop="24dp"
     tools:context="com.example.techtron.flexcalculator.DisplayFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageButton
+        android:id="@+id/imb_delete"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scc=""/>
 
+    <!--multiple sources that said text views are scrollable at a certent size but that dont work for me, there will be a certain point where there are to many charachters on screen to see the entire result of the equation-->
+    <!--pro tip, you want to include right of and end of -->
+    <HorizontalScrollView
+        android:id="@+id/scv_display"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_toEndOf="@+id/imb_delete"
+        android:layout_toRightOf="@+id/imb_delete" >
+        <!--gravity end will place the text view to the far right side of the scroll view-->
+        <TextView
+            android:id="@+id/tv_display"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="end"
+            tools:text="580000+8"/>
+    </HorizontalScrollView>
 </RelativeLayout>
