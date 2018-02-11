@@ -12,14 +12,16 @@
     <fragment
         android:id="@+id/frag_display"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:name="com.example.techtron.flexcalculator.DisplayFragment"
-        tools:layout="@layout/fragment_display"/>
+        tools:layout="@layout/fragment_display" />
+    <!--layout_below, the power of using the relative layout-->
     <fragment
         android:id="@+id/frag_input"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.example.techtron.flexcalculator.InputFragment"
-        tools:layout="@layout/fragment_input" />
+        tools:layout="@layout/fragment_input"
+        android:layout_below="@+id/frag_display" />
 </RelativeLayout>
 
