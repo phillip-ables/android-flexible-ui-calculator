@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!--remove padding, rename id = just a convention i like to use for the root activity-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_activity_calculator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.techtron.flexcalculator.CalculatorActivity">
+    <!--since our fragments are basically static that means that we are not going to have to inflate them at runtime-->
+    <!--JUST PLACE FRAGMENTS IN THE LAYOUT LIKE SO-->
+    <!--specify a name which is going to point to a fragment class which we are going to use-->
+    <fragment
+        android:id="@+id/frag_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.techtron.flexcalculator.DisplayFragment"
+        tools:layout="@layout/fragment_display"/>
+    <fragment
+        android:id="@+id/frag_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.techtron.flexcalculator.InputFragment"
+        tools:layout="@layout/fragment_input" />
+</RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
