@@ -1,13 +1,46 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--get rid of text view and change layout from framlayout to linear layout-->
+<!--LinearLayout good if you want to align things in a vertical layout stack or horixzontal coloums-->
+<!--Important you want to specify a orientation, any of the child elements in this view group are going to be stacked vertically on each other-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.techtron.flexcalculator.InputFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:orientation="vertical"
+    tools:context="com.example.techtron.flexcalculator.InputFragment"
+    android:elevation="1dp">
+    <!--layout weight, four linear layouts are the same. since all layouts have a height of zero dip. weight for vertical elements, height 0 weight to what you want. this means each of these view groups take up a 1 to 1 to 1 ratio of the screen.4, four quaters.-->
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--naming convention i like to use for views, three letter condensation of what the view is button = btn, next two words are name-->
+        <Button
+            android:id="@+id/btn_number_seven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7"
+            />
+        <Button
+            android:id="@+id/btn_number_eight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8"/>
+        <Button
+            android:id="@+id/btn_number_nine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9"/>
+        <Button
+            android:id="@+id/btn_operator_divide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="/"/>
 
-</FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
