@@ -15,4 +15,11 @@
         <item name="android:textSize">34sp</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
+
+    <style name="TextViewDisplay">
+        <item name="android:textSize">56sp</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
 </resources>
