@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--select 16 bc thats when font family starts up, alt resource with the same name-->
+<!--app gets launched a particular dev it checks the api version on the machine and chooses which one it wants to use-->
+<resources>
+    <style name="ButtonNumberPad" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="ButtonOperation" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>
