@@ -10,6 +10,7 @@
     tools:context="com.example.techtron.flexcalculator.DisplayFragment">
 
     <ImageButton
+        style="@style/ImageButtonDisplay"
         android:id="@+id/imb_delete"
         android:layout_width="72dp"
         android:layout_height="72dp"/>
@@ -17,6 +18,7 @@
     <!--multiple sources that said text views are scrollable at a certent size but that dont work for me, there will be a certain point where there are to many charachters on screen to see the entire result of the equation-->
     <!--pro tip, you want to include right of and end of -->
     <HorizontalScrollView
+        style="@style/ScrollViewDisplay"
         android:id="@+id/scv_display"
         android:layout_width="match_parent"
         android:layout_height="72dp"
@@ -24,6 +26,7 @@
         android:layout_toRightOf="@+id/imb_delete" >
         <!--gravity end will place the text view to the far right side of the scroll view-->
         <TextView
+            style="@style/TextViewDisplay"
             android:id="@+id/tv_display"
             android:layout_width="wrap_content"
             android:layout_height="72dp"
